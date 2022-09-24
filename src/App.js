@@ -2,10 +2,10 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Form from './components/Form';
-import About from './components/About';
+// import About from './components/About';
 import React, { useState } from 'react'
 import Alert from './components/Alert';
-import {Routes , Route} from 'react-router-dom';
+// import {Routes , Route} from 'react-router-dom';
 
 
 function App() {
@@ -42,14 +42,14 @@ function App() {
         <Navbar title="TUtilS" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
-          <Routes>
-            <Route exact path="/about" element={<About />} />
+          {/* <Routes> */}
+            {/* <Route exact path="/about" element={<About />} /> */}
             {/* <About />
             </Route> */}
-            <Route exact path="/" element={<Form />} />
-            {/* <Form text="Enter Your Text Below" showAlert={showAlert} mode={mode} />
-            </Route> */}
-          </Routes>
+            {/* <Route exact path="/" element={<Form />} /> */}
+            <Form text="Enter Your Text Below" showAlert={showAlert} mode={mode} />
+            {/* </Route> */}
+          {/* </Routes> */}
         </div>
 
     </>
